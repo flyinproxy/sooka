@@ -6,5 +6,5 @@
   "routes": [
     { "src": "/(.*)", "dest": "/index.js" }
   ],
-  "regions": ["sin1"]
+  "regions": ["syd1"]
 }
