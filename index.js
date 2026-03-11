@@ -11,7 +11,7 @@ app.get("/:id/linear/*.mpd", async (req, res) => {
 
   try {
     // Ambil token valid dari GitHub
-    const tokenResp = await fetch("https://kuncisukses.flyintv.workers.dev/");
+    const tokenResp = await fetch("http://iptv.flyin.my.id/sooka/token.txt");
     const validToken = (await tokenResp.text()).trim();
 
     // Validasi token hanya di manifest
