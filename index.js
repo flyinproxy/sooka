@@ -23,7 +23,7 @@ app.get("/:id/linear/*.mpd", async (req, res) => {
     }
 
     // Ambil bearer
-    const bearerResp = await fetch(`https://flytv.my.id/sooka/bearer/${id}.php`);
+    const bearerResp = await fetch(`https://bolatv.my.id/sooka/bearer/${id}.php`);
     const bearer = (await bearerResp.text()).trim();
     if (!bearer) throw new Error("Bearer kosong");
 
