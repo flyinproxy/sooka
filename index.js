@@ -28,7 +28,7 @@ app.get("/:id/linear/*.mpd", async (req, res) => {
     if (!bearer) throw new Error("Bearer kosong");
 
     // Proxy manifest ke origin (tanpa token query)
-    const url = `https://l83.dp.sooka.my/${id}/linear/${path}.mpd`;
+    const url = `https://l81.dp.sooka.my/${id}/linear/${path}.mpd`;
     const response = await fetch(url, {
       headers: {
         "User-Agent": "Mozilla/5.0 (Linux; Android 15; SM-S931B Build/AP3A.240905.015.A2; wv)",
@@ -60,7 +60,7 @@ app.get("/:id/linear/*", async (req, res) => {
     if (!bearer) throw new Error("Bearer kosong");
 
     // Proxy segmen ke origin (tanpa token query)
-    const url = `https://l83.dp.sooka.my/${id}/linear/${path}`;
+    const url = `https://l81.dp.sooka.my/${id}/linear/${path}`;
     const response = await fetch(url, {
       headers: {
         "User-Agent": "Mozilla/5.0 (Linux; Android 15; SM-S931B Build/AP3A.240905.015.A2; wv)",
